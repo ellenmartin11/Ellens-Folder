@@ -1,0 +1,69 @@
+/* Basic styles */
+
+header {
+    background-color: #dbb2b2;
+    color: #000000;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+
+body {
+    font-family: Barlow, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .album-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .album {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .album img {
+    width: 100%;
+    height: 100%;
+    transition: filter 0.3s ease;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .album:hover .overlay {
+    opacity: 1;
+  }
+  
+  .rating {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Additional album info */
+  .info {
+    text-align: center;
+    padding: 0 10px;
+  }
+  
+
